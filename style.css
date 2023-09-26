@@ -23,32 +23,78 @@ body {
 .header__title {
     color: blue;
     font-weight: bold;
-    
-
-
 }
 .header__input--search-input__box {
     background: 	
     #ebebeb;
-    width: 500px;
+    width: 480px;
     height: 35px;
     border-radius: 5px;
     border: none;
-    margin: 0 25px;
+    margin: 0 150px;
 
 }
 
 /*formulario2*/
 
+.main__container{
+    box-shadow: inset 0px 6px 6px 0px rgba(0,0,0,0.30);
+  height: calc(100vh - 47px);
+  background: #e2e2e2;
+  padding-top: 12px;
+}
+
 .form__container {
-    width: 150vh;
-    height: 250px;
-    margin: 25px 200px 10px 200px;
-    border-radius: 10px;
+    margin: 20px auto;
+    width: 63%;
     background: white;
+    border-radius: 8px;
+    padding: 20px 40px 40px;
 }
 
 .form__title-title2 {
-    font-weight:600;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+   
+}
+
+.form__input-container{
+   display: flex;
+   align-items: center;
+  
+}
+
+#input_title{
+
 
 }
+
+.form__input--text-input__box{
+    flex: 3;
+    background: #e2e2e2;
+    border: none;
+    border-radius: 5px;
+    padding: 11px;
+    margin: 5px;
+    width: 70%;
+}
+
+.form__input--priority-input__box{
+  flex: 1;
+  background: #e2e2e2;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  width: 5%;
+}
+/*botao adicionar tarefa*/
+.form__button--add-task {
+width: 100%;
+  background: rgb(0, 98, 255);
+  border: none;
+  margin-top: 40px;
+  padding: 18px 0px;
+  border-radius: 5px;
+  color:rgb(255,255,255) 
