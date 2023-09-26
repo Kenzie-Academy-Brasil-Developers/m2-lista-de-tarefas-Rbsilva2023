@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100;400&family=Inter&family=Poppins:wght@100;400&family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #e2e2e2;
+}
+
+.header__container {
+    height: 70px;
+    width: 220vh;
+    background: white;
+    
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 180px;
+    padding: 19px;
+}
+
+.header__title {
+    color: blue;
+    font-weight: bold;
+    
+
+
+}
+.header__input--search-input__box {
+    background: 	
+    #ebebeb;
+    width: 500px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    margin: 0 25px;
+
+}
+
+/*formulario2*/
+
+.form__container {
+    width: 150vh;
+    height: 250px;
+    margin: 25px 200px 10px 200px;
+    border-radius: 10px;
+    background: white;
+}
+
+.form__title-title2 {
+    font-weight:600;
+
+}
