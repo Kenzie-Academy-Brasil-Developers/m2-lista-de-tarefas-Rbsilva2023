@@ -13,16 +13,19 @@ body {
 }
 
 .header__content {
+    flex: 3;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    margin: 0 180px;
+    margin-left: 100px;
+    
     padding: 19px;
 }
 
 .header__title {
     color: blue;
     font-weight: bold;
+
 }
 .header__input--search-input__box {
     background: 	
@@ -65,10 +68,6 @@ body {
   
 }
 
-#input_title{
-
-
-}
 
 .form__input--text-input__box{
     flex: 3;
@@ -98,3 +97,78 @@ width: 100%;
   padding: 18px 0px;
   border-radius: 5px;
   color:rgb(255,255,255) 
+}
+
+  /*FORMULARIO3*/
+
+.tasks__container {
+    margin: 20px auto;
+    width: 63%;
+    background: white;
+    border-radius: 8px;
+    padding: 20px 40px 40px; 
+}
+
+.form__title-title3{
+    font-weight:800;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tasks__list {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.task__item {
+    display: flex;
+    justify-content: space-between;
+    background: #e2e2e2;
+    margin-top: 8px;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.task-info__container{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+
+}
+
+.task-type-span-urgent {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: red;
+    margin-right:15px ;
+}
+
+.task-type-span-important {
+    background: yellow;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin-right:15px ;
+}
+
+.task-type-span-normal{
+    background: green;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin-right:15px ;
+}
+
+.task__button--remove-task{
+    display: flex;
+    align-items: flex-end;
+    background-image: url(./assets/trash-icon.svg);
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    padding-left: 10px;
+    cursor: pointer;
+    border: none;
+}
+
