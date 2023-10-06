@@ -13,11 +13,34 @@ const tasks = [
 
 function renderElements (arr) {
   const ul = document.querySelector("ul");
+  
+  ul.innerHTML = '';
 
   for(let i = 0; i < arr.length; i++){
   const element = arr[i]
   ul.appendChild(createTaskItem(element))
   }
+
+  const addTaskButton = document.querySelector(".form__button--add-task");
+
+  addTaskButton.addEventListener('click', function(event) {
+
+    const title = document.getElementById("input_title").value;
+    const type = document.querySelector(".form__input--priority").value;
+
+    const newTask = {
+      title: title,
+      type: type
+    };
+
+    tasks.push(newTask)  
+    
+    renderElements(tasks)
+
+
+    event.preventDefault();
+
+})
 }
 
 function createTaskItem (object) {
@@ -49,7 +72,10 @@ function createTaskItem (object) {
   liList.append(divList,buttonList)
 
   return liList;
+
+  
   
 }
+
 
 renderElements(tasks)
